@@ -1,0 +1,184 @@
+html {
+    background-color: #e6e6e6;
+}
+
+body {
+    background-image: url("../images/bats.gif");
+    background-repeat: repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 3px solid black;
+    box-shadow: 0 0 15px 5px black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 2px solid black;
+    background: linear-gradient(45deg, white, orange 75%, black);
+}
+
+.pumpkin {
+    margin-right: 1em;
+}
+
+header h1 {
+    color: black;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.25em;
+    margin: 0.2em 0 0 0;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: black;
+}
+
+#nav_menu ul li {
+    width: 20%;
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: .8em 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+    color: orange;
+}
+
+main {
+    display: flex;
+    padding: 1.5em;
+    gap: 2em;
+}
+
+aside {
+    width: 160px;
+    flex: 0 0 160px;
+}
+
+#nav_list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav_list ul li {
+    margin-bottom: .8em;
+    border: 2px solid black;
+}
+
+#nav_list ul li a {
+    display: block;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: .8em;
+}
+
+section {
+    flex: 1;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+section h3 {
+    color: orange;
+    margin-bottom: .2em;
+}
+
+section p {
+    line-height: 1.4;
+}
+
+.product_categories {
+    padding-left: 1.2em;
+}
+
+.product_image {
+    max-width: 160px;
+    display: block;
+    margin-bottom: .5em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 2px solid black;
+    background: linear-gradient(45deg, black, orange 25%, white);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    #wrapper {
+        width: 95%;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 1.25em;
+        gap: 1.25em;
+    }
+
+    section {
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    #nav_list ul li {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
